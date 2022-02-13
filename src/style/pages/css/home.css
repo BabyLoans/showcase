@@ -1,6 +1,6 @@
 .home {
     background: linear-gradient(127.45deg, #341E75 -0.33%, #161743 25.29%, #161743 100.05%);
-    height: 100vh;
+    height: auto;
     width: 100vw;
     position: absolute;
 }
@@ -12,12 +12,35 @@
     justify-items: center;
     padding-left: 1rem;
     width: auto;
-    height: 50%;
-    overflow: hidden;
+    height: 100%;
 }
 
 .h3-linear-gradient {
     background-image: linear-gradient(90deg, #B185FF 0%, #404BBD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
+}
+
+.home-logo {
+    width: 50%;
+}
+
+.home-p {
+    color: #E3E3E3;
+}
+
+.home-h2 {
+    font-weight: bold;
+    background-image: linear-gradient(90deg, #B185FF 0%, #404BBD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.home-card {
+    background-color: transparent ;
+    border: transparent;
+}
+
+.home-background-image {
+    width: 1000px;
 }

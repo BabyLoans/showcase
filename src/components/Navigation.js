@@ -5,12 +5,8 @@ import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Typical from 'react-typical';
 
-import { faArrowRightToBracket } from "@fortawesome/free-solid-svg-icons";
-import { faComments } from "@fortawesome/free-solid-svg-icons";
-import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { faComments, faDollarSign, faUsers, faArrowRightToBracket } from "@fortawesome/free-solid-svg-icons";
 
 function Navigation() {
     return (
@@ -33,10 +29,10 @@ function Navigation() {
                         navbarScroll
                     >
                     </Nav>
-                    <Nav.Link href="#" className="text-white">ABOUT <FontAwesomeIcon icon={faUsers} /></Nav.Link>
+                    <Nav.Link href="#about" className="text-white">ABOUT <FontAwesomeIcon icon={faUsers} /></Nav.Link>
                     <Nav.Link href="#" className="text-white">MARKETS <FontAwesomeIcon icon={faDollarSign} /></Nav.Link>
                     <Nav.Link href="#" className="text-white">FAQ <FontAwesomeIcon icon={faComments} /></Nav.Link>
-                    <Nav.Link href="#">
+                    <Nav.Link target="_blank" href="https://babyloans-front.herokuapp.com">
                         <Button variant="dark">ENTER APP <FontAwesomeIcon icon={faArrowRightToBracket} /></Button>
                     </Nav.Link>
                 </Navbar.Collapse>
