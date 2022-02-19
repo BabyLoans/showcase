@@ -1,7 +1,8 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
-import logo from '../assets/logo.png';
-import homeBackgoundImage from '../assets/home-background-image.png';
+import Footer from '../components/Footer';
+import logo from '../assets/bbl_logo.png';
+import showcaseBackgoundImage from '../assets/showcase-background-image.png';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -9,14 +10,14 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from "@fortawesome/free-solid-svg-icons";
+import { FaLinkedin } from 'react-icons/fa';
 
-import '../style/pages/css/home.css';
+import '../style/pages/css/showcase.css';
 
 function Home() {
   return (
-    <div className="home">
+    
+    <div className="background-showcase">
       <Navigation />
       <br /> <br />
       <Container>
@@ -44,15 +45,15 @@ function Home() {
           <Col></Col>
           <Col>
             <Card style={{ width: 'auto;' }} className="home-card">
-              <Card.Img src=""/>Mettre une photo de groupe
+              <Card.Img src=""/>
               <Card.Body>
                 <Card.Title className="home-h2">TEAM</Card.Title>
                 <Card.Text className="home-p">
-                  BabyLoans.Finance is a project created by a team of 4 developers within the ESIEE-IT school. <br />
-                  mettre nos linkedin 
+                  BabyLoans.Finance is a project created by a team of 4 developers within the ESIEE-IT school. <br /><br />
+                   
+                 
 
                 </Card.Text>
-                <Button variant="dark">Github</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -60,10 +61,13 @@ function Home() {
         <br /> <br />
         <Row>
           <Col>
-            {/* <img src={homeBackgoundImage} alt="homeBackgoundImage" className="home-background-image"/> */}
+          </Col>
+          <Col>
+            <img src={showcaseBackgoundImage} alt="showcaseBackgoundImage" className="showcase-background-image"/>
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 }

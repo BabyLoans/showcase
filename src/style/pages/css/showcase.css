@@ -1,10 +1,33 @@
-.home {
+.background-showcase {
     background: linear-gradient(127.45deg, #341E75 -0.33%, #161743 25.29%, #161743 100.05%);
-    height: auto;
-    width: 100vw;
-    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
+.showcase-background-image {
+    width: 1000px;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #E3E3E3;
+}
+
+/* MARKETS PAGE */
+
+#root > div > div > div > div > table { 
+    text-align: center;
+}
+
+.markets-logo-assets {
+    width: 25px;
+}
+
+.markets-table-td-1 {
+}
+
+/* HOME PAGE */
 
 .home-main {
     display: grid;
@@ -41,6 +64,10 @@
     border: transparent;
 }
 
-.home-background-image {
-    width: 1000px;
+
+
+/* FOOTER */
+
+.footer-background {
+    background: #B0B2FF;
 }

@@ -3,22 +3,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
-import Typical from 'react-typical';
 
 import { FaUsers, FaComments, FaDollarSign, FaExternalLinkAlt  } from 'react-icons/fa';
 
-function Navigation() {
+function Footer() {
     return (
-        <Navbar expand="lg">
+        <Navbar className="footer-background" expand="lg">
             <Container>
                 <Nav.Link href="/" className="display-6 text-white">
-                    BabyLoans.Finance is
-                    {' '}
-                    <Typical
-                        steps={['fast', 2500, 'secure', 2500, 'easy to use', 2000]}
-                        loop={Infinity}
-                        wrapper="b"
-                        />
+                    BabyLoans.Finance
                 </Nav.Link>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
@@ -40,4 +33,4 @@ function Navigation() {
     );
 }
   
-export default Navigation;
+export default Footer;
