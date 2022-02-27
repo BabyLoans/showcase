@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 
-import { FaUsers, FaComments, FaDollarSign, FaExternalLinkAlt  } from 'react-icons/fa';
+import { FaCoins, FaComments, FaDollarSign, FaExternalLinkAlt  } from 'react-icons/fa';
 
 function Footer() {
     return (
@@ -21,7 +21,7 @@ function Footer() {
                         navbarScroll
                     >
                     </Nav>
-                    <Nav.Link href="/#about" className="text-white">ABOUT <FaUsers /></Nav.Link>
+                    <Nav.Link href="/#about" className="text-white">ABOUT <FaCoins /></Nav.Link>
                     <Nav.Link href="/markets" className="text-white">MARKETS <FaDollarSign /></Nav.Link>
                     <Nav.Link href="https://babyloans-finance.gitbook.io/welcome-to-gitbook/" className="text-white">FAQ <FaComments /></Nav.Link>
                     <Nav.Link target="_blank" href="https://babyloans-front.herokuapp.com">

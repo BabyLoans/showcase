@@ -14,6 +14,20 @@ a {
     color: #E3E3E3;
 }
 
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
 /* MARKETS PAGE */
 
 #root > div > div > div > div > table { 
@@ -24,10 +38,17 @@ a {
     width: 25px;
 }
 
-.markets-table-td-1 {
+/* HOME PAGE */
+
+.home-btn {
+    background-color: #5300FF;
+    border-color: #5300FF;
 }
 
-/* HOME PAGE */
+.home-btn:hover {
+    background-color: #B185FF;
+    border-color: #B185FF;
+}
 
 .home-main {
     display: grid;
@@ -36,6 +57,7 @@ a {
     padding-left: 1rem;
     width: auto;
     height: 100%;
+    animation: float 6s ease-in-out infinite;
 }
 
 .h3-linear-gradient {
@@ -53,6 +75,7 @@ a {
 }
 
 .home-h2 {
+    color: #B185FF;
     font-weight: bold;
     background-image: linear-gradient(90deg, #B185FF 0%, #404BBD 100%);
     -webkit-background-clip: text;
