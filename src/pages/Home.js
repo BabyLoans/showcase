@@ -2,7 +2,8 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import logo from '../assets/bbl_logo.png';
-import teamMember4 from '../assets/team_member_4.jpg';
+import teamMember1 from '../assets/team_member_1.jpeg';
+import teamMember2 from '../assets/team_member_2.jpeg';
 import showcaseBackgoundImage from '../assets/showcase-background-image.png';
 
 import Container from 'react-bootstrap/Container';
@@ -12,7 +13,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Badge from 'react-bootstrap/Badge';
 
-import { FaLinkedin, FaGithub, FaUserLock, FaCoins } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaBook, FaCoins, FaDownload } from 'react-icons/fa';
 
 import '../style/pages/css/showcase.css';
 
@@ -46,8 +47,9 @@ function Home() {
           </Col>
           <Col></Col>
           <Col>
-            <h2 id="#about" className="home-h2"><FaUserLock /> SECURITY</h2>
-            <p></p>
+            <h2 id="#about" className="home-h2"><FaBook /> WHITE PAPER</h2>
+            <p className="home-p">Check out the project’s <b>White Paper</b> where you will find all the features and mechanisms used for our platform and its token the The <b>BabyLoans token (BBL)</b>.</p>
+            <Button className="home-btn"><FaDownload /> Download</Button>
           </Col>
         </Row>
         <br /> <br />
@@ -73,59 +75,47 @@ function Home() {
           <br /> <br />
         <Row>
           <Col>
-            <Card style={{ width: '18rem' }} bg="dark">
-              <Card.Img variant="top" src={logo} />
+            <Card style={{ width: '18rem' }} className="home-card">
+              <Card.Img variant="top" src={teamMember1} />
               <Card.Body>
                 <Card.Title><p className='home-p'>Pierre FOURNY</p></Card.Title>
-                <Badge bg="danger">Developer</Badge> <Badge bg="info">Smart Contract Developers</Badge>{' '}
+                <Badge bg="dark">Developer</Badge> <Badge bg="dark">Smart Contract Developers</Badge>{' '}
                 <Card.Text> <br />
                   <p className="home-p">
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                   </p>
                 </Card.Text>
-                <Button className="home-btn"><FaLinkedin /> Linkedin</Button>
+                <a href="https://www.linkedin.com/in/pierre-fourny">
+                  <Button><FaLinkedin /> Linkedin</Button>
+                </a>
               </Card.Body>
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '18rem' }} bg="dark">
-              <Card.Img variant="top" src={logo} />
+            <Card style={{ width: '18rem' }} className="home-card">
+              <Card.Img variant="top" style={{ width: '18rem', height: '18rem' }} src={teamMember2} />
               <Card.Body>
                 <Card.Title><p className='home-p'>Rémy LEFEBVRE</p></Card.Title>
-                <Badge bg="danger">Developer</Badge> <Badge bg="info">Smart Contract Developers</Badge>{' '}
+                <Badge bg="dark">Developer</Badge> <Badge bg="dark">Smart Contract Developers</Badge>{' '}
                 <Card.Text> <br />
                   <p className="home-p">
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                   </p>
                 </Card.Text>
-                <Button className="home-btn"><FaLinkedin /> Linkedin</Button>
+                <a href="https://www.linkedin.com/in/remylefebvrefr">
+                  <Button><FaLinkedin /> Linkedin</Button>
+                </a>
               </Card.Body>
             </Card>
           </Col>
           <Col>
-            <Card style={{ width: '18rem' }} bg="dark">
+            <Card style={{ width: '18rem' }} className="home-card">
               <Card.Img variant="top" src={logo} />
               <Card.Body>
                 <Card.Title><p className='home-p'>Alexandre BEROULE</p></Card.Title>
-                <Badge bg="danger">Developer</Badge> <Badge bg="info">Smart Contract Developers</Badge>{' '}
-                <Card.Text> <br />
-                  <p className="home-p">
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </p>
-                </Card.Text>
-                <Button className="home-btn"><FaLinkedin /> Linkedin</Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card style={{ width: '18rem' }} bg="dark">
-              <Card.Img variant="top" src={teamMember4} />
-              <Card.Body>
-                <Card.Title><p className='home-p'>Thomas NEVIANI</p></Card.Title>
-                <Badge bg="danger">Developer</Badge> <Badge bg="info">UX/UI Designer</Badge>{' '}
+                <Badge bg="dark">Developer</Badge> <Badge bg="dark">Smart Contract Developers</Badge>{' '}
                 <Card.Text> <br />
                   <p className="home-p">
                     Some quick example text to build on the card title and make up the bulk of
@@ -133,7 +123,25 @@ function Home() {
                   </p>
                 </Card.Text>
                 <a href="https://fr.linkedin.com/in/thomasnv">
-                  <Button className="home-btn"><FaLinkedin /> Linkedin</Button>
+                  <Button><FaLinkedin /> Linkedin</Button>
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card style={{ width: '18rem' }} className="home-card">
+              <Card.Img variant="top" style={{ width: '18rem', height: '18rem' }} src={logo} />
+              <Card.Body>
+                <Card.Title><p className='home-p'>Thomas NEVIANI</p></Card.Title>
+                <Badge bg="dark">Developer</Badge> <Badge bg="dark">UX/UI Designer</Badge>{' '}
+                <Card.Text> <br />
+                  <p className="home-p">
+                    Some quick example text to build on the card title and make up the bulk of
+                    the card's content.
+                  </p>
+                </Card.Text>
+                <a href="https://fr.linkedin.com/in/thomasnv">
+                  <Button><FaLinkedin /> Linkedin</Button>
                 </a>
               </Card.Body>
             </Card>
