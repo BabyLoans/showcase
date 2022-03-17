@@ -11,15 +11,15 @@ function TableMarkets(props) {
 
   React.useEffect(() => {
     if (isLoading) {
-      fetch("https://babyloans-api.herokuapp.com/api/tokens", {
-        mode: "cors",
-      }).then((tokenResponse) => {
-        setTokens(tokenResponse.json());
-
-        fetch("https://babyloans-api.herokuapp.com/api/rates", {
+        fetch("https://babyloans-api.herokuapp.com/api/tokens", {
+            mode: "cors",
+        }).then(async (tokenResponse) => {
+            setTokens((await tokenResponse.json())['hydra:member']);
+            
+        fetch("https://babyloans-api.herokuapp.com/api/rates?isCurrent="+true, {
           mode: "cors",
-        }).then((rateResponse) => {
-          setRates(rateResponse.json());
+        }).then(async (rateResponse) => {
+            setRates((await rateResponse.json())['hydra:member']);
         });
       });
     }
@@ -31,44 +31,45 @@ function TableMarkets(props) {
         <tr>
           <th></th>
           <th>ASSETS</th>
+          <th>RATE</th>
           <th>TOTAL SUPPLY</th>
           <th>TOTAL BORROW</th>
           <th>STATUS</th>
         </tr>
       </thead>
       <tbody>
-        {tokens.map((result) => {
+        {tokens.map((token) => {
           return (
             <tr>
-              <td className="markets-table-td-1">
-                <img
-                  src={process.env.PUBLIC_URL + "/tokens/" + result.logoUrl}
-                  className="markets-logo-assets"
-                />
-              </td>
-              <td className="markets-table-td-1">
-                <b>{result.symbol}</b>
-              </td>
-              <td className="markets-table-td-1"></td>
-              <td className="markets-table-td-1"></td>
-              <td>
-                {rates.map((rate) => {
-                  if (rate.tokenId === result.id) {
-                    return <Badge variant="success">{rate.rate}</Badge>;
-                  }
-                })}
-              </td>
-              <td>
-                {result.isActive ? (
-                  <Badge pill bg="success">
-                    Available
-                  </Badge>
-                ) : (
-                  <Badge pill bg="danger">
-                    Unavailable
-                  </Badge>
-                )}
-              </td>
+                <td className="markets-table-td-1">
+                    <img
+                        src={token.logoUrl}
+                        className="markets-logo-assets"
+                    />
+                </td>
+                <td className="markets-table-td-1">
+                    <b>{token.symbol}</b>
+                </td>
+                <td>
+                    {rates.map((rate) => {
+                        if (rate.token === token['@id']) {
+                            return <Badge bg="success">{rate.value} $</Badge>;
+                        }
+                    })}
+                </td>
+                <td className="markets-table-td-1"></td>
+                <td className="markets-table-td-1"></td>
+                <td>
+                    {token.isActive ? (
+                        <Badge pill bg="success">
+                        Available
+                        </Badge>
+                    ) : (
+                        <Badge pill bg="danger">
+                        Unavailable
+                        </Badge>
+                    )}
+                </td>
             </tr>
           );
         })}
