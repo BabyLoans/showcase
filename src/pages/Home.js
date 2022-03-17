@@ -2,8 +2,9 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import logo from '../assets/bbl_logo.png';
-import teamMember1 from '../assets/team_member_1.jpeg';
-import teamMember2 from '../assets/team_member_2.jpeg';
+import teamMember1 from '../assets/team/member_1.jpeg';
+import teamMember2 from '../assets/team/member_2.JPG';
+import teamMember4 from '../assets/team/member_4.jpg';
 import showcaseBackgoundImage from '../assets/showcase-background-image.png';
 
 import Container from 'react-bootstrap/Container';
@@ -76,7 +77,7 @@ function Home() {
         <Row>
           <Col>
             <Card style={{ width: '18rem' }} className="home-card">
-              <Card.Img variant="top" src={teamMember1} />
+              <Card.Img variant="top" src={teamMember1} className="rounded-circle" />
               <Card.Body>
                 <Card.Title><p className='home-p'>Pierre FOURNY</p></Card.Title>
                 <Badge bg="dark">Developer</Badge> <Badge bg="dark">Smart Contract Developers</Badge>{' '}
@@ -87,14 +88,14 @@ function Home() {
                   </p>
                 </Card.Text>
                 <a href="https://www.linkedin.com/in/pierre-fourny">
-                  <Button><FaLinkedin /> Linkedin</Button>
+                  <Button variant="dark"><FaLinkedin /> Linkedin</Button>
                 </a>
               </Card.Body>
             </Card>
           </Col>
           <Col>
             <Card style={{ width: '18rem' }} className="home-card">
-              <Card.Img variant="top" style={{ width: '18rem', height: '18rem' }} src={teamMember2} />
+              <Card.Img variant="top" style={{ width: '18rem', height: '18rem' }} src={teamMember2} className="rounded-circle" />
               <Card.Body>
                 <Card.Title><p className='home-p'>Rémy LEFEBVRE</p></Card.Title>
                 <Badge bg="dark">Developer</Badge> <Badge bg="dark">Smart Contract Developers</Badge>{' '}
@@ -105,14 +106,14 @@ function Home() {
                   </p>
                 </Card.Text>
                 <a href="https://www.linkedin.com/in/remylefebvrefr">
-                  <Button><FaLinkedin /> Linkedin</Button>
+                  <Button variant="dark"><FaLinkedin /> Linkedin</Button>
                 </a>
               </Card.Body>
             </Card>
           </Col>
           <Col>
             <Card style={{ width: '18rem' }} className="home-card">
-              <Card.Img variant="top" src={logo} />
+              <Card.Img variant="top" src={logo} className="rounded-circle" />
               <Card.Body>
                 <Card.Title><p className='home-p'>Alexandre BEROULE</p></Card.Title>
                 <Badge bg="dark">Developer</Badge> <Badge bg="dark">Smart Contract Developers</Badge>{' '}
@@ -123,17 +124,17 @@ function Home() {
                   </p>
                 </Card.Text>
                 <a href="https://fr.linkedin.com/in/thomasnv">
-                  <Button><FaLinkedin /> Linkedin</Button>
+                  <Button variant="dark"><FaLinkedin /> Linkedin</Button>
                 </a>
               </Card.Body>
             </Card>
           </Col>
           <Col>
             <Card style={{ width: '18rem' }} className="home-card">
-              <Card.Img variant="top" style={{ width: '18rem', height: '18rem' }} src={logo} />
+              <Card.Img variant="top" style={{ width: '18rem', height: '18rem' }} src={teamMember4} className="rounded-circle" />
               <Card.Body>
                 <Card.Title><p className='home-p'>Thomas NEVIANI</p></Card.Title>
-                <Badge bg="dark">Developer</Badge> <Badge bg="dark">UX/UI Designer</Badge>{' '}
+                <Badge bg="dark">Developer</Badge> <Badge bg="dark">Smart Contract Developers</Badge>{' '}
                 <Card.Text> <br />
                   <p className="home-p">
                     Some quick example text to build on the card title and make up the bulk of
@@ -141,7 +142,7 @@ function Home() {
                   </p>
                 </Card.Text>
                 <a href="https://fr.linkedin.com/in/thomasnv">
-                  <Button><FaLinkedin /> Linkedin</Button>
+                  <Button variant="dark"><FaLinkedin /> Linkedin</Button>
                 </a>
               </Card.Body>
             </Card>
