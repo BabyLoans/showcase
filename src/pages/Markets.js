@@ -9,6 +9,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import { FaDollarSign } from 'react-icons/fa';
+
 import '../style/pages/css/showcase.css';
 
 function Markets() {
@@ -19,7 +21,9 @@ function Markets() {
         <Container>
           <Row>
             <Col>
-                <TableMarkets />
+              <h2 id="#about" className="home-h2"><FaDollarSign /> MARKETS</h2>
+              <br />
+              <TableMarkets /> <br />
             </Col>
           </Row>
           <Row>

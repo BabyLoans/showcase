@@ -53,7 +53,7 @@ function TableMarkets(props) {
                 <td>
                     {rates.map((rate) => {
                         if (rate.token === token['@id']) {
-                            return <Badge bg="success">{rate.value} $</Badge>;
+                            return <Badge bg="success">{rate.value} %</Badge>;
                         }
                     })}
                 </td>
