@@ -5,7 +5,8 @@ WORKDIR /usr/src/app
 COPY package.json package.json
 COPY yarn.lock yarn.lock
 
-RUN sudo apt-get git
+RUN apt-get -y update
+RUN apt-get -y install git
 RUN yarn install 
 
 COPY . .
