@@ -4,10 +4,11 @@ import React from "react";
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import PageHeader from "components/PageHeader/PageHeader.js";
-import Product from "components/Market/Product.js";
 import Footer from "components/Footer/Footer.js";
 
-export default function Market() {
+import Teams from "views/IndexSections/Team.js";
+
+export default function Team() {
   React.useEffect(() => {
     document.body.classList.toggle("index-page");
     // Specify how to clean up after this effect:
@@ -21,7 +22,7 @@ export default function Market() {
       <div className="wrapper">
         <PageHeader />
         <div className="main">
-          <Product />
+          <Teams />
         </div>
         <Footer />
       </div>

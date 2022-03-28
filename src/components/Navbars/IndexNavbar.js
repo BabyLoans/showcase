@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Typical from 'react-typical';
 import {
   Button,
   Collapse,
@@ -56,7 +55,7 @@ export default function IndexNavbar() {
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand id="navbar-brand">
+          <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <span>
               <img
                 alt="..."
@@ -135,13 +134,10 @@ export default function IndexNavbar() {
                 Getting started
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem tag={Link} to="/#about">
-                  About
-                </DropdownItem>
                 <DropdownItem tag={Link} to="/market">
                   Market
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/#team">
+                <DropdownItem tag={Link} to="/team">
                   Team
                 </DropdownItem>
                 <DropdownItem href="https://babyloans-finance.gitbook.io/welcome-to-gitbook/">
