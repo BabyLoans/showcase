@@ -55,17 +55,20 @@ export default function IndexNavbar() {
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span>
-              <img
-                alt="..."
-                className="img-fluid rounded-circle shadow"
-                src={require("assets/img/bbl_logo.png").default}
-                style={{ width: "50px" }}
-              />
-              {' '}
-              BABYLOANS FINANCE
-            </span> 
+          <NavbarBrand id="navbar-brand">
+            <a href="https://pancakeswap.finance/swap">
+              <Button
+              className="btn-link btn btn-neutral"
+                >
+                <img
+                  alt="..."
+                  className="img-fluid rounded-circle shadow"
+                  src={require("assets/img/bbl_logo.png").default}
+                  style={{ width: "50px" }}
+                />
+                { ' ' } 17,26 $
+              </Button>
+            </a>
           </NavbarBrand>
           <button
             aria-expanded={collapseOpen}
