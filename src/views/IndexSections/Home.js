@@ -100,7 +100,7 @@ export default function Home() {
                     BabyLoans.Finance is a project created by a team of 4 developers within the ESIEE-IT school. <br /><br />
                     <a href="https://github.com/BabyLoans">
                       <Button className="nav-link d-none d-lg-block" color="info">
-                        <i class="fab fa-github" /> GitHub
+                        <i className="fab fa-github" /> GitHub
                       </Button>
                     </a>
                   </p>

@@ -118,7 +118,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 title="Check project on GitHub"
               >
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
                 <p className="d-lg-none d-xl-none">GitHub</p>
               </NavLink>
             </NavItem>
@@ -152,7 +152,7 @@ export default function IndexNavbar() {
                 className="nav-link d-none d-lg-block"
                 color="primary"
               >
-                ENTER APP <i class="fas fa-external-link-alt"></i>
+                ENTER APP <i className="fas fa-external-link-alt"></i>
               </Button>
             </NavItem>
           </Nav>

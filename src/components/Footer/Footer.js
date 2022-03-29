@@ -74,7 +74,7 @@ export default function Footer() {
                 href="/"
                 target="_blank"
               >
-                <i class="fab fa-github" />
+                <i className="fab fa-github" />
               </Button>
             </div>
           </Col>
