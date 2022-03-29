@@ -1,4 +1,5 @@
 import React from "react";
+import Typical from 'react-typical';
 
 // reactstrap components
 import { Container } from "reactstrap";
@@ -15,7 +16,14 @@ export default function PageHeader() {
       <div className="squares square7" />
       <Container>
         <div className="content-center brand">
-          <h1 className="h1-seo">BABYLOANS FINANCE</h1>
+          <h1 className="h1-seo">
+            BABYLOANS FINA 
+            <Typical
+              steps={['N', 1000, 'NC', 1000, 'NCE', 1000]}
+              loop={Infinity}
+              wrapper="span"
+            />
+          </h1>
           <br /><br />
           <h2>
             THE LIQUIDITY PROTOCOL <br />
