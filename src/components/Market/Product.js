@@ -63,7 +63,7 @@ export default function Product() {
           return (
             <>
               <Col md="4">
-                <Card className="card-coin card-plain">
+                <Card className="card-coin card-plain" color="default">
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
@@ -71,7 +71,7 @@ export default function Product() {
                           alt="..."
                           className="img-center img-fluid"
                           src={token.logoUrl}
-                          style={{ width: "75px" }}
+                          style={{ width: "50px" }}
                         /><br />
                         <h4 className="text-uppercase">{token.symbol}</h4>
                         <span>Infos</span>
@@ -85,14 +85,14 @@ export default function Product() {
                         </ListGroupItem>
                         <ListGroupItem>BORROW APY : {' '}
                           {rates.map((rate) => {
-                              if (rate.token === token['@id']) {
+                              if (rate.token['id'] === token['id']) {
                                   return rate.value;
                               }
                           })}%
                         </ListGroupItem>
                         <ListGroupItem>DEPOSITS APY : {' '}
                           {rates.map((rate) => {
-                              if (rate.token === token['@id']) {
+                              if (rate.token['id'] === token['id']) {
                                   return rate.value;
                               }
                           })}%

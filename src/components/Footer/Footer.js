@@ -27,11 +27,6 @@ export default function Footer() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/#about" tag={Link}>
-                  ABOUT
-                </NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink to="/market" tag={Link}>
                   MARKET
                 </NavLink>

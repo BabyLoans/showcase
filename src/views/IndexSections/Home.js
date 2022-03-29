@@ -30,7 +30,7 @@ export default function Home() {
                   className="img-fluid floating"
                   src={require("assets/img/dashboard.png").default}
                 />
-                <Card className="card-stats bg-danger">
+                <Card className="card-stats bg-primary">
                   <CardBody>
                     <div className="justify-content-center">
                       <div className="numbers">

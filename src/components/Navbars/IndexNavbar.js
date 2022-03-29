@@ -102,24 +102,8 @@ export default function IndexNavbar() {
               <NavLink
                 data-placement="bottom"
                 href="/"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Follow us on Twitter"
               >
-                <i className="fab fa-twitter" />
-                <p className="d-lg-none d-xl-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="https://github.com/BabyLoans"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Check project on GitHub"
-              >
-                <i className="fab fa-github"></i>
-                <p className="d-lg-none d-xl-none">GitHub</p>
+                <i className="fas fa-home"></i>
               </NavLink>
             </NavItem>
             <UncontrolledDropdown nav>
