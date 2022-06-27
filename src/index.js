@@ -11,6 +11,7 @@ import Team from "views/Team.js";
 
 ReactDOM.render(
   <BrowserRouter>
+  
     <Switch>
       <Route exact path="/" render={(props) => <Index {...props} />} />
       <Route exact path="/market" render={(props) => <Market {...props} />} />
