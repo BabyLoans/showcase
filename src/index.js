@@ -18,5 +18,6 @@ ReactDOM.render(
     </Switch>
     <Redirect from="/" to="/" />
   </BrowserRouter>,
+  
   document.getElementById("root")
 );
