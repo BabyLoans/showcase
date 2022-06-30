@@ -34,8 +34,8 @@ export default function Home() {
                   <CardBody>
                     <div className="justify-content-center">
                       <div className="numbers">
-                        <CardTitle tag="p">803</CardTitle>
-                        <p className="card-category text-white">Supply</p>
+                        <CardTitle tag="p">100%</CardTitle>
+                        <p className="card-category text-white">Safe</p>
                       </div>
                     </div>
                   </CardBody>
@@ -44,9 +44,9 @@ export default function Home() {
                   <CardBody>
                     <div className="justify-content-center">
                       <div className="numbers">
-                        <CardTitle tag="p">515</CardTitle>
+                        <CardTitle tag="p">515 k</CardTitle>
                         <p className="card-category text-white">
-                          Borrow
+                          Satisfied customers
                         </p>
                       </div>
                     </div>
