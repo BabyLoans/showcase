@@ -138,6 +138,7 @@ export default function IndexNavbar() {
               <Button
                 className="nav-link d-none d-lg-block"
                 color="primary"
+                href="https://babyloans-front.herokuapp.com/dashboard"
               >
                 ENTER APP <i className="fas fa-external-link-alt"></i>
               </Button>
