@@ -26,16 +26,16 @@ export default function Home() {
             <Row className="row-grid justify-content-between">
               <Col md="5">
                 <img
-                  alt="..."
                   className="img-fluid floating"
-                  src={require("assets/img/dashboard.png").default}
+                  src={require("assets/img/product.JPG").default}
+                  
                 />
                 <Card className="card-stats bg-primary">
                   <CardBody>
                     <div className="justify-content-center">
                       <div className="numbers">
-                        <CardTitle tag="p">100%</CardTitle>
-                        <p className="card-category text-white">Safe</p>
+                        <CardTitle tag="p">803</CardTitle>
+                        <p className="card-category text-white">Supply</p>
                       </div>
                     </div>
                   </CardBody>
@@ -44,20 +44,10 @@ export default function Home() {
                   <CardBody>
                     <div className="justify-content-center">
                       <div className="numbers">
-                        <CardTitle tag="p">573 K</CardTitle>
+                        <CardTitle tag="p">515</CardTitle>
                         <p className="card-category text-white">
-                          Satisfied customers
+                          Borrow
                         </p>
-                      </div>
-                    </div>
-                  </CardBody>
-                </Card>
-                <Card className="card-stats bg-default">
-                  <CardBody>
-                    <div className="justify-content-center">
-                      <div className="numbers">
-                        <CardTitle tag="p">10 425</CardTitle>
-                        <p className="card-category text-white">Business</p>
                       </div>
                     </div>
                   </CardBody>

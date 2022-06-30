@@ -63,7 +63,7 @@ export default function Product() {
           return (
             <>
               <Col md="4">
-                <Card className="card-coin card-plain" color="default">
+                <Card className="card-coin card-plain" style={{ backgroundColor: "rgb(6 9 35)"}}>
                   <CardBody>
                     <Row>
                       <Col className="text-center" md="12">
@@ -102,7 +102,7 @@ export default function Product() {
                   </CardBody>
                   <CardFooter className="text-center">
                     {token.isActive ? (
-                      <Button className="btn-simple" color="success">
+                      <Button className="btn-simple" color="success" href="https://babyloans-front.herokuapp.com/loans">
                         Available
                       </Button>
                     ) : (
